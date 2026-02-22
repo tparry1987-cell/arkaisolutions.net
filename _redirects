@@ -1,0 +1,55 @@
+# Old site redirects — map all removed pages to new structure
+
+# Industry pages → homepage industries section
+/dental-ai-receptionist          /about.html  301
+/dental-ai-receptionist.html     /about.html  301
+/hair-beauty-ai-receptionist     /about.html  301
+/hair-beauty-ai-receptionist.html /about.html 301
+/medical-ai-receptionist         /about.html  301
+/medical-ai-receptionist.html    /about.html  301
+/law-firm-ai-receptionist        /about.html  301
+/law-firm-ai-receptionist.html   /about.html  301
+/accountant-ai-receptionist      /about.html  301
+/accountant-ai-receptionist.html /about.html  301
+/estate-agent-ai-receptionist    /about.html  301
+/estate-agent-ai-receptionist.html /about.html 301
+/tradesman-ai-receptionist       /about.html  301
+/tradesman-ai-receptionist.html  /about.html  301
+/gym-ai-receptionist             /about.html  301
+/gym-ai-receptionist.html        /about.html  301
+/vet-ai-receptionist             /about.html  301
+/vet-ai-receptionist.html        /about.html  301
+/restaurant-ai-receptionist      /about.html  301
+/restaurant-ai-receptionist.html /about.html  301
+
+# Comparison pages → homepage services
+/ai-vs-human-receptionist        /index.html#services    301
+/ai-vs-human-receptionist.html   /index.html#services    301
+/ai-vs-answering-service         /index.html#services    301
+/ai-vs-answering-service.html    /index.html#services    301
+/ai-vs-ivr                       /index.html#services    301
+/ai-vs-ivr.html                  /index.html#services    301
+/ai-vs-voicemail                 /index.html#services    301
+/ai-vs-voicemail.html            /index.html#services    301
+
+# Other removed pages
+/about                           /about.html             301
+/faq                             /index.html             301
+/faq.html                        /index.html             301
+/demo                            /index.html#demo        301
+/demo.html                       /index.html#demo        301
+/case-studies                    /about.html              301
+/case-studies.html               /about.html              301
+
+# Blog pages → homepage
+/blog                            /index.html             301
+/blog.html                       /index.html             301
+/blog/*                          /index.html             301
+
+# Nura demo variants
+/nura_demo                       /index.html#demo        301
+/nura_demo.html                  /index.html#demo        301
+/nura_demo_*                     /index.html#demo        301
+
+# 404 fallback
+/*                               /404.html               404

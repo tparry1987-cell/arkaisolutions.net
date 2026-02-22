@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Thank You | Ark AI Solutions</title>
+  <meta name="robots" content="noindex">
+  <link rel="icon" href="favicon.png" type="image/png">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <div class="page-background" style="background-image: url('images/hero-forest.jpg');"></div>
+
+  <div class="page-overlay">
+
+    <nav id="navbar" class="scrolled">
+      <a href="index.html" class="logo">ARK AI<span class="dot">.</span></a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="index.html#services">Services</a></li>
+        <li><a href="about.html">About</a></li>
+      </ul>
+      <a href="index.html#demo" class="btn-nav">Book Demo</a>
+      <button class="mobile-toggle" id="mobileToggle" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </nav>
+
+    <main class="content-wrapper">
+      <section class="subpage-header container" style="padding-bottom: 8rem; min-height: 60vh; display: flex; flex-direction: column; justify-content: center;">
+        <span class="section-label">Request Received</span>
+        <h1 style="font-family: var(--font-sans); font-size: clamp(2rem, 4vw, 3rem); font-weight: 300; letter-spacing: -0.02em; margin-bottom: 2rem;">Thank <span class="italic-accent">You.</span></h1>
+        <p style="max-width: 500px; margin: 0 auto 2rem;">Your demonstration request has been received. Our engineering team will be in touch within 48 hours to set up your personalised voice agent testing environment.</p>
+        <a href="index.html" class="text-link">← Return to homepage</a>
+      </section>
+    </main>
+
+    <footer>
+      <div class="container footer-grid">
+        <div>
+          <a href="index.html" class="logo footer-logo">ARK AI<span class="dot">.</span></a>
+          <p class="footer-tagline">Never miss another call. Intelligent voice agents serving businesses across the UK.</p>
+        </div>
+        <div class="footer-links">
+          <h6>Navigation</h6>
+          <a href="index.html#services">Services</a>
+          <a href="about.html">About</a>
+          <a href="index.html#demo">Free Demo</a>
+        </div>
+        <div class="footer-links">
+          <h6>Get in Touch</h6>
+          <a href="tel:+442039960962">020 3996 0962</a>
+          <a href="mailto:hello@arkaisolutions.net">hello@arkaisolutions.net</a>
+          <a href="privacy.html">Privacy Policy</a>
+          <a href="terms.html">Terms & Conditions</a>
+        </div>
+      </div>
+      <div class="container footer-bottom">
+        <p>&copy; 2026 ARK AI Solutions. All rights reserved.</p>
+      </div>
+    </footer>
+
+  </div>
+
+  <script>
+    const mobileToggle = document.getElementById('mobileToggle');
+    const navLinks = document.getElementById('navLinks');
+    mobileToggle.addEventListener('click', () => {
+      navLinks.classList.toggle('active');
+      mobileToggle.classList.toggle('active');
+    });
+  </script>
+
+</body>
+</html>
