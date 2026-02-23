@@ -1,6 +1,30 @@
 # Old site redirects — map all removed pages to new structure
 
-# Industry pages → homepage industries section
+# Industry pages (actual old filenames)
+/ai-receptionist-dental-practices        /about.html  301
+/ai-receptionist-dental-practices.html   /about.html  301
+/ai-receptionist-hair-salons             /about.html  301
+/ai-receptionist-hair-salons.html        /about.html  301
+/ai-receptionist-medical-practices       /about.html  301
+/ai-receptionist-medical-practices.html  /about.html  301
+/ai-receptionist-law-firms               /about.html  301
+/ai-receptionist-law-firms.html          /about.html  301
+/ai-receptionist-accountants             /about.html  301
+/ai-receptionist-accountants.html        /about.html  301
+/ai-receptionist-estate-agents           /about.html  301
+/ai-receptionist-estate-agents.html      /about.html  301
+/ai-receptionist-tradesmen               /about.html  301
+/ai-receptionist-tradesmen.html          /about.html  301
+/ai-receptionist-gyms-fitness            /about.html  301
+/ai-receptionist-gyms-fitness.html       /about.html  301
+/ai-receptionist-veterinary              /about.html  301
+/ai-receptionist-veterinary.html         /about.html  301
+/ai-receptionist-vets                    /about.html  301
+/ai-receptionist-vets.html               /about.html  301
+/ai-receptionist-restaurants             /about.html  301
+/ai-receptionist-restaurants.html        /about.html  301
+
+# Old format industry pages (just in case)
 /dental-ai-receptionist          /about.html  301
 /dental-ai-receptionist.html     /about.html  301
 /hair-beauty-ai-receptionist     /about.html  301
@@ -22,15 +46,43 @@
 /restaurant-ai-receptionist      /about.html  301
 /restaurant-ai-receptionist.html /about.html  301
 
-# Comparison pages → homepage services
-/ai-vs-human-receptionist        /index.html#services    301
-/ai-vs-human-receptionist.html   /index.html#services    301
-/ai-vs-answering-service         /index.html#services    301
-/ai-vs-answering-service.html    /index.html#services    301
-/ai-vs-ivr                       /index.html#services    301
-/ai-vs-ivr.html                  /index.html#services    301
-/ai-vs-voicemail                 /index.html#services    301
-/ai-vs-voicemail.html            /index.html#services    301
+# City-specific pages (catch-all for any ai-receptionist-* not matched above)
+/ai-receptionist-newcastle       /locations.html  301
+/ai-receptionist-newcastle.html  /locations.html  301
+/ai-receptionist-london          /locations.html  301
+/ai-receptionist-london.html     /locations.html  301
+/ai-receptionist-manchester      /locations.html  301
+/ai-receptionist-manchester.html /locations.html  301
+/ai-receptionist-birmingham      /locations.html  301
+/ai-receptionist-birmingham.html /locations.html  301
+/ai-receptionist-leeds           /locations.html  301
+/ai-receptionist-leeds.html      /locations.html  301
+/ai-receptionist-edinburgh       /locations.html  301
+/ai-receptionist-edinburgh.html  /locations.html  301
+
+# Comparison pages
+/ai-receptionist-vs-answering-service        /index.html  301
+/ai-receptionist-vs-answering-service.html   /index.html  301
+/ai-receptionist-vs-voicemail                /index.html  301
+/ai-receptionist-vs-voicemail.html           /index.html  301
+/ai-vs-human-receptionist                    /index.html  301
+/ai-vs-human-receptionist.html               /index.html  301
+/ai-vs-answering-service                     /index.html  301
+/ai-vs-answering-service.html                /index.html  301
+/ai-vs-ivr                                   /index.html  301
+/ai-vs-ivr.html                              /index.html  301
+/ai-vs-voicemail                             /index.html  301
+/ai-vs-voicemail.html                        /index.html  301
+/ark-ai-vs-moneypenny                        /index.html  301
+/ark-ai-vs-moneypenny.html                   /index.html  301
+/ark-ai-vs-norango                           /index.html  301
+/ark-ai-vs-norango.html                      /index.html  301
+
+# Guides and tools
+/virtual-receptionist-uk-guide               /index.html  301
+/virtual-receptionist-uk-guide.html          /index.html  301
+/roi-calculator                              /index.html#calculator  301
+/roi-calculator.html                         /index.html#calculator  301
 
 # Other removed pages
 /about                           /about.html             301
@@ -50,6 +102,8 @@
 /nura_demo                       /index.html#demo        301
 /nura_demo.html                  /index.html#demo        301
 /nura_demo_*                     /index.html#demo        301
+/nura_full_site                  /index.html             301
+/nura_full_site.html             /index.html             301
 
-# 404 fallback
+# 404 fallback — must be last
 /*                               /404.html               404
