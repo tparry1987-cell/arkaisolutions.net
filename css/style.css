@@ -847,13 +847,14 @@ footer {
   gap: 1rem;
 }
 
-.footer-links h6 {
+.footer-links .footer-heading {
   color: var(--text-primary);
   font-size: 0.85rem;
   font-weight: 600;
   letter-spacing: 0.1em;
   text-transform: uppercase;
   margin-bottom: 1rem;
+  line-height: 1.6;
 }
 
 .footer-links a {
@@ -992,10 +993,12 @@ footer {
   padding: 0 0 8rem;
 }
 
-.subpage-content h3 {
+.subpage-content h2 {
   margin-top: 3rem;
   margin-bottom: 1rem;
   color: var(--text-primary);
+  font-size: 1.5rem;
+  font-weight: 400;
 }
 
 .subpage-content p,
@@ -1026,7 +1029,7 @@ footer {
   margin-bottom: 4rem;
 }
 
-.locations-region h3 {
+.locations-region h2 {
   font-size: 1.3rem;
   margin-bottom: 1.5rem;
   color: var(--text-primary);
