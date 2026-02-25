@@ -3,16 +3,12 @@
 
 # Redirect old domain to new domain
 [[redirects]]
-  from = "https://arkaisolutions.net/*"
+  from = "/*"
   to = "https://voqalai.com/:splat"
   status = 301
   force = true
-
-[[redirects]]
-  from = "https://www.arkaisolutions.net/*"
-  to = "https://voqalai.com/:splat"
-  status = 301
-  force = true
+  [redirects.conditions]
+    Host = ["arkaisolutions.net", "www.arkaisolutions.net"]
 
 [[headers]]
   for = "/*"
