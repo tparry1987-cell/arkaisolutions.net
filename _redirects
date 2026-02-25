@@ -1,3 +1,7 @@
+# Domain redirect — old domain to new
+https://arkaisolutions.net/*  https://voqalai.com/:splat  301!
+https://www.arkaisolutions.net/*  https://voqalai.com/:splat  301!
+
 # Old site redirects — map all removed pages to new structure
 
 # Industry pages (actual old filenames)
