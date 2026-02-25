@@ -1,6 +1,19 @@
 [build]
   publish = "."
 
+# Redirect old domain to new domain
+[[redirects]]
+  from = "https://arkaisolutions.net/*"
+  to = "https://voqalai.com/:splat"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "https://www.arkaisolutions.net/*"
+  to = "https://voqalai.com/:splat"
+  status = 301
+  force = true
+
 [[headers]]
   for = "/*"
   [headers.values]
