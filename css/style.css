@@ -222,19 +222,15 @@ nav.scrolled {
 }
 
 .logo {
-  font-size: 1.25rem;
-  font-weight: 700;
-  letter-spacing: 0.05em;
-  text-transform: uppercase;
   display: flex;
   align-items: center;
-  gap: 2px;
   text-decoration: none;
   color: var(--text-primary);
 }
 
-.logo .dot {
-  color: var(--accent);
+.logo svg {
+  height: 36px;
+  width: auto;
 }
 
 .nav-links {
