@@ -269,7 +269,7 @@
       });
       if (host && host.shadowRoot) {
         var s = document.createElement('style');
-        s.textContent = '.retell-chat-window { max-height: 420px !important; height: 420px !important; }';
+        s.textContent = '.retell-chat-window { max-height: 350px !important; height: 350px !important; }';
         host.shadowRoot.appendChild(s);
       } else {
         setTimeout(retellResize, 500);
