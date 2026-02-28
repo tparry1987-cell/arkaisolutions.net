@@ -1,0 +1,708 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pricing | Voqal AI - AI Receptionist Plans for UK Businesses</title>
+  <meta name="description" content="Transparent pricing for Voqal AI's voice AI receptionist. Managed service from £197/mo or one-off build from £997. No hidden fees. UK businesses.">
+  <meta property="og:title" content="Pricing | Voqal AI - AI Receptionist Plans">
+  <meta property="og:description" content="Transparent pricing for AI receptionist services. Managed plans from £197/mo or one-off builds from £997.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://voqalai.com/pricing.html">
+  <meta property="og:site_name" content="Voqal AI">
+  <meta property="og:image" content="https://voqalai.com/images/hero-forest.jpg">
+  <meta property="og:locale" content="en_GB">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Pricing | Voqal AI - AI Receptionist Plans">
+  <meta name="twitter:description" content="Transparent pricing. Managed service from £197/mo or one-off build from £997. No hidden fees.">
+  <meta name="twitter:image" content="https://voqalai.com/images/hero-forest.jpg">
+  <link rel="canonical" href="https://voqalai.com/pricing.html">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="icon" href="favicon-32.png" type="image/png" sizes="32x32">
+  <link rel="apple-touch-icon" href="favicon.png">
+  <link rel="stylesheet" href="css/style.css">
+
+  <!-- Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebPage",
+    "name": "Pricing",
+    "description": "Transparent pricing for Voqal AI voice AI receptionist services.",
+    "url": "https://voqalai.com/pricing.html",
+    "breadcrumb": {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://voqalai.com/" },
+        { "@type": "ListItem", "position": 2, "name": "Pricing", "item": "https://voqalai.com/pricing.html" }
+      ]
+    }
+  }
+  </script>
+
+  <!-- Google Tag Manager -->
+  <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+  'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+  })(window,document,'script','dataLayer','GTM-XXXXXXX');</script>
+
+  <!-- Cal.com embed -->
+  <script>
+    (function (C, A, L) { let p = function (a, ar) { a.q.push(ar); }; let d = C.document; C.Cal = C.Cal || function () { let cal = C.Cal; let ar = arguments; if (!cal.loaded) { cal.ns = {}; cal.q = cal.q || []; d.head.appendChild(d.createElement("script")).src = A; cal.loaded = true; } if (ar[0] === L) { const api = function () { p(api, arguments); }; const namespace = ar[1]; api.q = api.q || []; if(typeof namespace === "string"){cal.ns[namespace] = cal.ns[namespace] || api;p(cal.ns[namespace], ar);p(cal, ["initNamespace", namespace]);} else p(cal, ar); return;} p(cal, ar); }; })(window, "https://app.cal.com/embed/embed.js", "init");
+    Cal("init", {origin:"https://cal.com"});
+    Cal("ui", {"theme":"dark","styles":{"branding":{"brandColor":"#db7c54"}},"hideEventTypeDetails":false,"layout":"month_view"});
+  </script>
+
+  <!-- Pricing-specific styles -->
+  <style>
+    .pricing-hero {
+      padding: 160px 0 40px;
+      text-align: center;
+    }
+    .pricing-hero h1 {
+      font-size: clamp(42px, 6vw, 72px);
+      font-weight: 300;
+      line-height: 1.1;
+      margin-bottom: 16px;
+    }
+    .pricing-hero p {
+      color: var(--text-faint, rgba(255,255,255,0.55));
+      font-size: 17px;
+      max-width: 520px;
+      margin: 0 auto;
+      line-height: 1.6;
+      font-weight: 300;
+    }
+
+    /* Toggle */
+    .pricing-toggle-wrap {
+      display: flex;
+      justify-content: center;
+      margin: 40px 0 60px;
+    }
+    .pricing-toggle {
+      display: flex;
+      background: rgba(7,9,8,0.5);
+      border: 1px solid var(--border-color, rgba(248,249,250,0.1));
+      border-radius: 50px;
+      padding: 4px;
+      gap: 4px;
+      backdrop-filter: blur(10px);
+      -webkit-backdrop-filter: blur(10px);
+    }
+    .pricing-toggle-btn {
+      padding: 12px 32px;
+      border: none;
+      border-radius: 50px;
+      background: transparent;
+      color: rgba(248,249,250,0.5);
+      font-family: inherit;
+      font-size: 14px;
+      cursor: pointer;
+      transition: all 0.3s;
+      font-weight: 400;
+      letter-spacing: 0.5px;
+    }
+    .pricing-toggle-btn.active {
+      background: rgba(219,124,84,0.15);
+      color: #db7c54;
+      border: 1px solid rgba(219,124,84,0.3);
+    }
+
+    /* Cards Grid */
+    .pricing-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 24px;
+      margin-bottom: 40px;
+    }
+    .pricing-card {
+      background: rgba(7,9,8,0.65);
+      border: 1px solid var(--border-color, rgba(248,249,250,0.08));
+      border-radius: 16px;
+      padding: 40px 32px;
+      backdrop-filter: blur(20px);
+      -webkit-backdrop-filter: blur(20px);
+      transition: border-color 0.3s, transform 0.3s;
+      position: relative;
+    }
+    .pricing-card:hover {
+      border-color: rgba(248,249,250,0.15);
+      transform: translateY(-4px);
+    }
+    .pricing-card.featured {
+      border-color: rgba(219,124,84,0.35);
+      background: rgba(7,9,8,0.7);
+    }
+    .pricing-card.featured:hover {
+      border-color: rgba(219,124,84,0.5);
+    }
+    .pricing-badge {
+      position: absolute;
+      top: -12px;
+      left: 50%;
+      transform: translateX(-50%);
+      background: #db7c54;
+      color: #070908;
+      font-size: 11px;
+      font-weight: 600;
+      letter-spacing: 1.5px;
+      text-transform: uppercase;
+      padding: 5px 18px;
+      border-radius: 50px;
+      white-space: nowrap;
+    }
+    .pricing-tier {
+      font-size: 13px;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      color: rgba(248,249,250,0.5);
+      margin-bottom: 20px;
+      font-weight: 400;
+    }
+    .pricing-price {
+      display: flex;
+      align-items: baseline;
+      gap: 4px;
+      margin-bottom: 8px;
+    }
+    .pricing-currency {
+      font-size: 24px;
+      font-weight: 300;
+      color: rgba(248,249,250,0.6);
+      align-self: flex-start;
+      margin-top: 8px;
+    }
+    .pricing-amount {
+      font-size: 56px;
+      font-weight: 300;
+      line-height: 1;
+      letter-spacing: -2px;
+    }
+    .pricing-card.featured .pricing-amount { color: #db7c54; }
+    .pricing-period {
+      font-size: 16px;
+      color: rgba(248,249,250,0.4);
+      font-weight: 300;
+    }
+    .pricing-desc {
+      font-size: 14px;
+      color: rgba(248,249,250,0.45);
+      margin-bottom: 32px;
+      font-weight: 300;
+    }
+    .pricing-features {
+      list-style: none;
+      padding: 0;
+      margin: 0 0 36px;
+    }
+    .pricing-features li {
+      padding: 10px 0;
+      border-bottom: 1px solid rgba(248,249,250,0.05);
+      font-size: 14px;
+      color: rgba(248,249,250,0.75);
+      font-weight: 300;
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+    .pricing-features li::before {
+      content: '';
+      width: 6px;
+      height: 6px;
+      border-radius: 50%;
+      background: #db7c54;
+      flex-shrink: 0;
+    }
+    .pricing-features li:last-child { border-bottom: none; }
+    .pricing-cta {
+      display: block;
+      text-align: center;
+      padding: 14px;
+      border: 1px solid rgba(248,249,250,0.15);
+      border-radius: 8px;
+      color: #f8f9fa;
+      text-decoration: none;
+      font-size: 14px;
+      font-weight: 400;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      transition: all 0.3s;
+    }
+    .pricing-cta:hover {
+      background: rgba(248,249,250,0.05);
+      border-color: rgba(248,249,250,0.3);
+    }
+    .pricing-card.featured .pricing-cta {
+      border-color: #db7c54;
+      color: #db7c54;
+    }
+    .pricing-card.featured .pricing-cta:hover {
+      background: rgba(219,124,84,0.1);
+    }
+
+    /* Maintenance note */
+    .maintenance-note {
+      text-align: center;
+      padding: 20px;
+      margin-top: 10px;
+      font-size: 15px;
+      color: rgba(248,249,250,0.5);
+      font-weight: 300;
+    }
+    .maintenance-note strong {
+      color: #db7c54;
+      font-weight: 500;
+    }
+
+    /* Comparison */
+    .vs-section { text-align: center; }
+    .vs-section h2 {
+      font-size: 36px;
+      font-weight: 300;
+      margin-bottom: 12px;
+    }
+    .vs-desc {
+      color: rgba(248,249,250,0.5);
+      font-size: 15px;
+      margin-bottom: 48px;
+      font-weight: 300;
+    }
+    .vs-grid {
+      display: grid;
+      grid-template-columns: 1fr auto 1fr;
+      gap: 32px;
+      align-items: start;
+      text-align: left;
+    }
+    .vs-card {
+      background: rgba(7,9,8,0.65);
+      border: 1px solid var(--border-color, rgba(248,249,250,0.08));
+      border-radius: 16px;
+      padding: 32px;
+      backdrop-filter: blur(20px);
+      -webkit-backdrop-filter: blur(20px);
+    }
+    .vs-card h3 {
+      font-size: 13px;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      color: rgba(248,249,250,0.5);
+      margin-bottom: 24px;
+      font-weight: 400;
+    }
+    .vs-card ul { list-style: none; padding: 0; margin: 0; }
+    .vs-card li {
+      padding: 8px 0;
+      font-size: 14px;
+      color: rgba(248,249,250,0.7);
+      font-weight: 300;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+    .vs-card li::before {
+      content: '';
+      width: 5px;
+      height: 5px;
+      border-radius: 50%;
+      background: #db7c54;
+      flex-shrink: 0;
+    }
+    .vs-divider {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-family: 'Instrument Serif', Georgia, serif;
+      font-style: italic;
+      font-size: 24px;
+      color: rgba(248,249,250,0.3);
+      padding-top: 80px;
+    }
+
+    /* Bottom CTA */
+    .pricing-bottom-cta {
+      text-align: center;
+      padding: 100px 0 80px;
+    }
+    .pricing-bottom-cta h2 {
+      font-size: 42px;
+      font-weight: 300;
+      margin-bottom: 12px;
+    }
+    .pricing-bottom-cta p {
+      color: rgba(248,249,250,0.5);
+      font-size: 15px;
+      margin-bottom: 36px;
+      font-weight: 300;
+    }
+    .btn-pricing-cta {
+      display: inline-block;
+      border: 1px solid #db7c54;
+      color: #db7c54;
+      padding: 16px 40px;
+      border-radius: 8px;
+      text-decoration: none;
+      font-size: 14px;
+      letter-spacing: 1.5px;
+      text-transform: uppercase;
+      font-weight: 400;
+      transition: all 0.3s;
+    }
+    .btn-pricing-cta:hover {
+      background: rgba(219,124,84,0.1);
+    }
+
+    .hidden { display: none; }
+
+    @media (max-width: 768px) {
+      .pricing-grid { grid-template-columns: 1fr; max-width: 420px; margin: 0 auto 40px; }
+      .vs-grid { grid-template-columns: 1fr; }
+      .vs-divider { padding: 0; font-size: 18px; }
+      .pricing-hero { padding: 140px 0 30px; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Google Tag Manager (noscript) -->
+  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-XXXXXXX" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+
+  <!-- Fixed Background Image -->
+  <div class="page-background" style="background-image: url('images/hero-forest.jpg');"></div>
+
+  <!-- Page Overlay -->
+  <div class="page-overlay">
+
+    <!-- Navigation -->
+    <nav id="navbar" class="fade-up-1">
+      <a href="index.html" class="logo"><svg viewBox="0 0 295 65" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs><linearGradient id="wf-grad" x1="0" y1="15" x2="0" y2="75"><stop offset="0%" stop-color="#e8955e"/><stop offset="100%" stop-color="#db7c54"/></linearGradient></defs>
+  <rect x="0" y="27" width="8" height="22" rx="4" fill="url(#wf-grad)"><animate attributeName="height" values="22;7.7;22" dur="1.2s" begin="0s" repeatCount="indefinite"/><animate attributeName="y" values="27;34.15;27" dur="1.2s" begin="0s" repeatCount="indefinite"/></rect>
+  <rect x="13" y="19" width="8" height="38" rx="4" fill="url(#wf-grad)"><animate attributeName="height" values="38;13.3;38" dur="1.2s" begin="0.2s" repeatCount="indefinite"/><animate attributeName="y" values="19;31.35;19" dur="1.2s" begin="0.2s" repeatCount="indefinite"/></rect>
+  <rect x="26" y="11" width="8" height="54" rx="4" fill="url(#wf-grad)"><animate attributeName="height" values="54;18.9;54" dur="1.2s" begin="0.1s" repeatCount="indefinite"/><animate attributeName="y" values="11;28.55;11" dur="1.2s" begin="0.1s" repeatCount="indefinite"/></rect>
+  <rect x="39" y="21" width="8" height="34" rx="4" fill="url(#wf-grad)"><animate attributeName="height" values="34;11.9;34" dur="1.2s" begin="0.3s" repeatCount="indefinite"/><animate attributeName="y" values="21;32.05;21" dur="1.2s" begin="0.3s" repeatCount="indefinite"/></rect>
+  <rect x="52" y="29" width="8" height="18" rx="4" fill="url(#wf-grad)"><animate attributeName="height" values="18;6.3;18" dur="1.2s" begin="0.15s" repeatCount="indefinite"/><animate attributeName="y" values="29;34.85;29" dur="1.2s" begin="0.15s" repeatCount="indefinite"/></rect>
+  <line x1="76" y1="12" x2="76" y2="64" stroke="rgba(255,255,255,0.06)" stroke-width="1"/>
+  <text x="94" y="52" font-family="'Instrument Serif', Georgia, serif" font-weight="400" font-style="italic" font-size="52" fill="#f8f9fa" letter-spacing="1">Voqal</text>
+  <text x="230" y="52" font-family="'Saira', sans-serif" font-weight="300" font-size="48" fill="#db7c54" letter-spacing="2">Ai</text>
+  <circle cx="282" cy="47" r="4" fill="#db7c54"><animate attributeName="opacity" values="1;0.4;1" dur="2.5s" repeatCount="indefinite"/></circle>
+</svg></a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="index.html#services">Services</a></li>
+        <li><a href="index.html#protocol">Protocol</a></li>
+        <li><a href="pricing.html" style="color: #db7c54;">Pricing</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="index.html#demo">Contact</a></li>
+      </ul>
+      <a href="index.html#demo" class="btn-nav">Book Demo</a>
+      <button class="mobile-toggle" id="mobileToggle" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="content-wrapper">
+
+      <!-- Hero -->
+      <section class="pricing-hero container">
+        <div class="reveal">
+          <span class="section-label">Transparent Pricing</span>
+          <h1>Simple <span class="italic-accent">Plans.</span></h1>
+          <p>No hidden fees. Choose managed service or a one-off build. Cancel anytime.</p>
+        </div>
+      </section>
+
+      <!-- Toggle -->
+      <div class="pricing-toggle-wrap reveal">
+        <div class="pricing-toggle">
+          <button class="pricing-toggle-btn active" onclick="showManaged()">Managed Service</button>
+          <button class="pricing-toggle-btn" onclick="showBuild()">Build &amp; Handover</button>
+        </div>
+      </div>
+
+      <!-- Managed Service Cards -->
+      <section class="container" id="managed-section">
+        <div class="pricing-grid">
+
+          <div class="pricing-card reveal">
+            <div class="pricing-tier">Starter</div>
+            <div class="pricing-price">
+              <span class="pricing-currency">&pound;</span>
+              <span class="pricing-amount">197</span>
+              <span class="pricing-period">/mo</span>
+            </div>
+            <div class="pricing-desc">200 minutes included</div>
+            <ul class="pricing-features">
+              <li>1 AI receptionist flow</li>
+              <li>Basic knowledge base</li>
+              <li>1 UK phone number</li>
+              <li>Standard support</li>
+              <li>Overage: &pound;0.20/min</li>
+            </ul>
+            <a href="index.html#demo" class="pricing-cta">Get Started</a>
+          </div>
+
+          <div class="pricing-card featured reveal" style="transition-delay: 0.1s;">
+            <div class="pricing-badge">Most Popular</div>
+            <div class="pricing-tier">Pro</div>
+            <div class="pricing-price">
+              <span class="pricing-currency">&pound;</span>
+              <span class="pricing-amount">397</span>
+              <span class="pricing-period">/mo</span>
+            </div>
+            <div class="pricing-desc">500 minutes included</div>
+            <ul class="pricing-features">
+              <li>Full booking flow</li>
+              <li>Calendar &amp; CRM integrations</li>
+              <li>Comprehensive knowledge base</li>
+              <li>Standard support</li>
+              <li>Overage: &pound;0.18/min</li>
+            </ul>
+            <a href="index.html#demo" class="pricing-cta">Get Started</a>
+          </div>
+
+          <div class="pricing-card reveal" style="transition-delay: 0.2s;">
+            <div class="pricing-tier">Premium</div>
+            <div class="pricing-price">
+              <span class="pricing-currency">&pound;</span>
+              <span class="pricing-amount">697</span>
+              <span class="pricing-period">/mo</span>
+            </div>
+            <div class="pricing-desc">1,000 minutes included</div>
+            <ul class="pricing-features">
+              <li>Multi-flow AI receptionist</li>
+              <li>CRM integration &amp; QA monitoring</li>
+              <li>Advanced call routing</li>
+              <li>Priority support</li>
+              <li>Overage: &pound;0.15/min</li>
+            </ul>
+            <a href="index.html#demo" class="pricing-cta">Get Started</a>
+          </div>
+
+        </div>
+      </section>
+
+      <!-- Build & Handover Cards -->
+      <section class="container hidden" id="build-section">
+        <div class="pricing-grid">
+
+          <div class="pricing-card reveal">
+            <div class="pricing-tier">Lite</div>
+            <div class="pricing-price">
+              <span class="pricing-currency">&pound;</span>
+              <span class="pricing-amount">997</span>
+              <span class="pricing-period">one-off</span>
+            </div>
+            <div class="pricing-desc">Basic AI receptionist build</div>
+            <ul class="pricing-features">
+              <li>1 receptionist flow</li>
+              <li>Knowledge base setup</li>
+              <li>1 UK phone number</li>
+              <li>1 week post-build support</li>
+            </ul>
+            <a href="index.html#demo" class="pricing-cta">Book Consultation</a>
+          </div>
+
+          <div class="pricing-card featured reveal" style="transition-delay: 0.1s;">
+            <div class="pricing-badge">Most Chosen</div>
+            <div class="pricing-tier">Standard</div>
+            <div class="pricing-price">
+              <span class="pricing-currency">&pound;</span>
+              <span class="pricing-amount">2,497</span>
+              <span class="pricing-period">one-off</span>
+            </div>
+            <div class="pricing-desc">Full receptionist build</div>
+            <ul class="pricing-features">
+              <li>Full booking flow</li>
+              <li>Calendar &amp; CRM integrations</li>
+              <li>2 weeks post-build support</li>
+              <li>Training documentation</li>
+            </ul>
+            <a href="index.html#demo" class="pricing-cta">Book Consultation</a>
+          </div>
+
+          <div class="pricing-card reveal" style="transition-delay: 0.2s;">
+            <div class="pricing-tier">Premium</div>
+            <div class="pricing-price">
+              <span class="pricing-currency">&pound;</span>
+              <span class="pricing-amount">4,997</span>
+              <span class="pricing-period">one-off</span>
+            </div>
+            <div class="pricing-desc">Complex multi-flow build</div>
+            <ul class="pricing-features">
+              <li>Multi-flow AI receptionist</li>
+              <li>CRM &amp; QA monitoring setup</li>
+              <li>4 weeks post-build support</li>
+              <li>Video walkthrough training</li>
+            </ul>
+            <a href="index.html#demo" class="pricing-cta">Book Consultation</a>
+          </div>
+
+        </div>
+        <div class="maintenance-note reveal">
+          <strong>+ Optional &pound;147/mo maintenance</strong> &mdash; ongoing monitoring, knowledge base updates, and priority support after handover.
+        </div>
+      </section>
+
+      <!-- Managed vs Build Comparison -->
+      <section class="section-padding container vs-section">
+        <div class="reveal">
+          <span class="section-label">Not Sure Which Route?</span>
+          <h2>Managed vs <span class="italic-accent">Handover.</span></h2>
+          <p class="vs-desc">Two ways to work with us. Same quality build.</p>
+        </div>
+
+        <div class="vs-grid reveal" style="transition-delay: 0.1s;">
+          <div class="vs-card">
+            <h3>Managed Service</h3>
+            <ul>
+              <li>We handle everything, monthly</li>
+              <li>Ongoing optimisation &amp; tuning</li>
+              <li>Knowledge base kept up to date</li>
+              <li>No technical skills needed</li>
+              <li>Scale up or down anytime</li>
+              <li>Best for: hands-off businesses</li>
+            </ul>
+          </div>
+          <div class="vs-divider">or</div>
+          <div class="vs-card">
+            <h3>Build &amp; Handover</h3>
+            <ul>
+              <li>One-off project, you own it</li>
+              <li>Full training &amp; documentation</li>
+              <li>Built on your own Retell account</li>
+              <li>Optional maintenance add-on</li>
+              <li>Full control &amp; independence</li>
+              <li>Best for: teams with tech capability</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <!-- Bottom CTA -->
+      <section class="container pricing-bottom-cta">
+        <div class="reveal">
+          <span class="section-label">Ready to Start?</span>
+          <h2>Book a Free <span class="italic-accent">Consultation.</span></h2>
+          <p>No pressure, no jargon. We'll find the right plan for your business.</p>
+          <a href="index.html#demo" class="btn-pricing-cta">Book Free Consultation &rarr;</a>
+        </div>
+      </section>
+
+    </main>
+
+    <!-- FOOTER -->
+    <footer>
+      <div class="container footer-grid">
+        <div>
+          <a href="index.html" class="logo footer-logo"><svg viewBox="0 0 295 65" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs><linearGradient id="wf-grad2" x1="0" y1="15" x2="0" y2="75"><stop offset="0%" stop-color="#e8955e"/><stop offset="100%" stop-color="#db7c54"/></linearGradient></defs>
+  <rect x="0" y="27" width="8" height="22" rx="4" fill="url(#wf-grad2)"><animate attributeName="height" values="22;7.7;22" dur="1.2s" begin="0s" repeatCount="indefinite"/><animate attributeName="y" values="27;34.15;27" dur="1.2s" begin="0s" repeatCount="indefinite"/></rect>
+  <rect x="13" y="19" width="8" height="38" rx="4" fill="url(#wf-grad2)"><animate attributeName="height" values="38;13.3;38" dur="1.2s" begin="0.2s" repeatCount="indefinite"/><animate attributeName="y" values="19;31.35;19" dur="1.2s" begin="0.2s" repeatCount="indefinite"/></rect>
+  <rect x="26" y="11" width="8" height="54" rx="4" fill="url(#wf-grad2)"><animate attributeName="height" values="54;18.9;54" dur="1.2s" begin="0.1s" repeatCount="indefinite"/><animate attributeName="y" values="11;28.55;11" dur="1.2s" begin="0.1s" repeatCount="indefinite"/></rect>
+  <rect x="39" y="21" width="8" height="34" rx="4" fill="url(#wf-grad2)"><animate attributeName="height" values="34;11.9;34" dur="1.2s" begin="0.3s" repeatCount="indefinite"/><animate attributeName="y" values="21;32.05;21" dur="1.2s" begin="0.3s" repeatCount="indefinite"/></rect>
+  <rect x="52" y="29" width="8" height="18" rx="4" fill="url(#wf-grad2)"><animate attributeName="height" values="18;6.3;18" dur="1.2s" begin="0.15s" repeatCount="indefinite"/><animate attributeName="y" values="29;34.85;29" dur="1.2s" begin="0.15s" repeatCount="indefinite"/></rect>
+  <line x1="76" y1="12" x2="76" y2="64" stroke="rgba(255,255,255,0.06)" stroke-width="1"/>
+  <text x="94" y="52" font-family="'Instrument Serif', Georgia, serif" font-weight="400" font-style="italic" font-size="52" fill="#f8f9fa" letter-spacing="1">Voqal</text>
+  <text x="230" y="52" font-family="'Saira', sans-serif" font-weight="300" font-size="48" fill="#db7c54" letter-spacing="2">Ai</text>
+  <circle cx="282" cy="47" r="4" fill="#db7c54"><animate attributeName="opacity" values="1;0.4;1" dur="2.5s" repeatCount="indefinite"/></circle>
+</svg></a>
+          <p class="footer-tagline">Never miss another call. Intelligent voice agents serving London, Manchester, and businesses across the UK.</p>
+        </div>
+        <div class="footer-links">
+          <p class="footer-heading">Navigation</p>
+          <a href="index.html#services">Services</a>
+          <a href="index.html#protocol">Protocol</a>
+          <a href="about.html">About</a>
+          <a href="locations.html">Locations</a>
+          <a href="index.html#demo">Free Demo</a>
+        </div>
+        <div class="footer-links">
+          <p class="footer-heading">Get in Touch</p>
+          <a href="tel:+442039960962">020 3996 0962</a>
+          <a href="mailto:info@voqalai.com">info@voqalai.com</a>
+          <a href="privacy.html">Privacy Policy</a>
+          <a href="terms.html">Terms & Conditions</a>
+        </div>
+      </div>
+      <div class="container footer-bottom">
+        <p>&copy; 2026 Voqal AI. All rights reserved.</p>
+      </div>
+    </footer>
+
+  </div>
+
+  <!-- Floating Call Button -->
+  <a href="tel:+442039960962" class="floating-call" aria-label="Call now">
+    <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M20.01 15.38c-1.23 0-2.42-.2-3.53-.56a.977.977 0 00-1.01.24l-1.57 1.97c-2.83-1.35-5.48-3.9-6.89-6.83l1.95-1.66c.27-.28.35-.67.24-1.02-.37-1.11-.56-2.3-.56-3.53 0-.54-.45-.99-.99-.99H4.19C3.65 3 3 3.24 3 3.99 3 13.28 10.73 21 20.01 21c.71 0 .99-.63.99-1.18v-3.45c0-.54-.45-.99-.99-.99z"/></svg>
+    <span>Call Now</span>
+  </a>
+
+  <!-- Cookie Consent Banner -->
+  <div id="cookieBanner" class="cookie-banner" style="display:none;">
+    <p>We use cookies to improve your experience. By continuing to use this site, you agree to our <a href="privacy.html">Privacy Policy</a>.</p>
+    <button id="cookieAccept" class="btn-cookie">Accept</button>
+  </div>
+
+  <script>
+    // Pricing toggle
+    function showManaged() {
+      document.getElementById('managed-section').classList.remove('hidden');
+      document.getElementById('build-section').classList.add('hidden');
+      document.querySelectorAll('.pricing-toggle-btn').forEach(b => b.classList.remove('active'));
+      document.querySelectorAll('.pricing-toggle-btn')[0].classList.add('active');
+    }
+    function showBuild() {
+      document.getElementById('managed-section').classList.add('hidden');
+      document.getElementById('build-section').classList.remove('hidden');
+      document.querySelectorAll('.pricing-toggle-btn').forEach(b => b.classList.remove('active'));
+      document.querySelectorAll('.pricing-toggle-btn')[1].classList.add('active');
+    }
+
+    // Navbar scroll effect
+    const navbar = document.getElementById('navbar');
+    window.addEventListener('scroll', () => {
+      navbar.classList.toggle('scrolled', window.scrollY > 50);
+    });
+
+    // Mobile menu toggle
+    const mobileToggle = document.getElementById('mobileToggle');
+    const navLinks = document.getElementById('navLinks');
+    mobileToggle.addEventListener('click', () => {
+      navLinks.classList.toggle('active');
+      mobileToggle.classList.toggle('active');
+    });
+    navLinks.querySelectorAll('a').forEach(link => {
+      link.addEventListener('click', () => {
+        navLinks.classList.remove('active');
+        mobileToggle.classList.remove('active');
+      });
+    });
+
+    // Scroll reveal
+    function reveal() {
+      document.querySelectorAll('.reveal').forEach(el => {
+        if (el.getBoundingClientRect().top < window.innerHeight - 100) {
+          el.classList.add('active');
+        }
+      });
+    }
+    window.addEventListener('scroll', reveal);
+    reveal();
+
+    // Cookie Consent
+    (function() {
+      if (!localStorage.getItem('cookieConsent')) {
+        document.getElementById('cookieBanner').style.display = 'flex';
+      }
+      document.getElementById('cookieAccept').addEventListener('click', function() {
+        localStorage.setItem('cookieConsent', 'accepted');
+        document.getElementById('cookieBanner').style.display = 'none';
+      });
+    })();
+  </script>
+
+</body>
+</html>
