@@ -114,6 +114,22 @@
     data-show-ai-popup="true"
     data-show-ai-popup-time="15"
   ></script>
+  <script>
+    // Resize Retell chat window via Shadow DOM style injection
+    (function retellResize() {
+      var host = null;
+      document.querySelectorAll('div').forEach(function(el) {
+        if (el.shadowRoot && el.style.position === 'fixed' && el.style.zIndex === '999999') host = el;
+      });
+      if (host && host.shadowRoot) {
+        var s = document.createElement('style');
+        s.textContent = '.retell-chat-window { max-height: 420px !important; height: 420px !important; }';
+        host.shadowRoot.appendChild(s);
+      } else {
+        setTimeout(retellResize, 500);
+      }
+    })();
+  </script>
 
 </body>
 </html>
