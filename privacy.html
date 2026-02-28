@@ -185,30 +185,25 @@
   </script>
 
   <!-- Retell AI Chat Widget -->
-  <script src="https://cdn.retellai.com/chat-embed.js"></script>
   <script>
-    const chatWidget = RetellChatEmbed.createChat({
-      agentId: "agent_98f2e297a8cf4ba0c5477ed2b4",
-      position: "bottom-right",
-      autoOpen: false,
-      domain: "voqalai.com",
-      customStyles: {
-        launcher: {
-          backgroundColor: "#db7c54",
-          iconColor: "#ffffff"
-        },
-        header: {
-          backgroundColor: "#db7c54",
-          title: "Voqal AI",
-          subtitle: "Ask us anything"
-        },
-        chatBubble: {
-          agentBackgroundColor: "#1a1c1b",
-          userBackgroundColor: "#db7c54",
-          userTextColor: "#ffffff"
-        }
-      }
-    });
+    (function() {
+      var s = document.createElement('script');
+      s.src = 'https://cdn.retellai.com/chat-embed.js';
+      s.onload = function() {
+        RetellChatEmbed.createChat({
+          agentId: "agent_98f2e297a8cf4ba0c5477ed2b4",
+          position: "bottom-right",
+          autoOpen: false,
+          domain: "voqalai.com",
+          customStyles: {
+            launcher: { backgroundColor: "#db7c54", iconColor: "#ffffff" },
+            header: { backgroundColor: "#db7c54", title: "Voqal AI", subtitle: "Ask us anything" },
+            chatBubble: { agentBackgroundColor: "#1a1c1b", userBackgroundColor: "#db7c54", userTextColor: "#ffffff" }
+          }
+        });
+      };
+      document.head.appendChild(s);
+    })();
   </script>
 
 </body>
