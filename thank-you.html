@@ -114,19 +114,45 @@
     data-show-ai-popup="true"
     data-show-ai-popup-time="15"
   ></script>
+  <!-- Custom Chat Launcher -->
+  <button id="voqalChatLauncher" aria-label="Chat with Aria" style="
+    position: fixed; bottom: 24px; right: 24px; z-index: 1000000;
+    width: 60px; height: 60px; border-radius: 50%; border: none; cursor: pointer;
+    background: linear-gradient(135deg, #e8955e, #db7c54);
+    box-shadow: 0 4px 20px rgba(219,124,84,0.4);
+    display: flex; align-items: center; justify-content: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  ">
+    <svg width="30" height="30" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path d="M20 4C10.6 4 3 10.4 3 18.2c0 4.5 2.4 8.5 6.2 11.2L7.5 36l7.2-3.6c1.7 0.4 3.4 0.6 5.3 0.6 9.4 0 17-6.4 17-14.2S29.4 4 20 4z" fill="white" opacity="0.95"/>
+      <rect x="12" y="16" width="3" height="8" rx="1.5" fill="#db7c54"><animate attributeName="height" values="8;3;8" dur="1.2s" begin="0s" repeatCount="indefinite"/><animate attributeName="y" values="16;18.5;16" dur="1.2s" begin="0s" repeatCount="indefinite"/></rect>
+      <rect x="17" y="13" width="3" height="14" rx="1.5" fill="#db7c54"><animate attributeName="height" values="14;5;14" dur="1.2s" begin="0.2s" repeatCount="indefinite"/><animate attributeName="y" values="13;17.5;13" dur="1.2s" begin="0.2s" repeatCount="indefinite"/></rect>
+      <rect x="22" y="15" width="3" height="10" rx="1.5" fill="#db7c54"><animate attributeName="height" values="10;3.5;10" dur="1.2s" begin="0.1s" repeatCount="indefinite"/><animate attributeName="y" values="15;18.25;15" dur="1.2s" begin="0.1s" repeatCount="indefinite"/></rect>
+      <rect x="27" y="17" width="3" height="6" rx="1.5" fill="#db7c54"><animate attributeName="height" values="6;2;6" dur="1.2s" begin="0.3s" repeatCount="indefinite"/><animate attributeName="y" values="17;19;17" dur="1.2s" begin="0.3s" repeatCount="indefinite"/></rect>
+    </svg>
+  </button>
   <script>
-    // Resize Retell chat window via Shadow DOM style injection
-    (function retellResize() {
+    // Custom launcher: hide Retell's default FAB, resize chat, wire up click
+    (function retellCustomize() {
       var host = null;
       document.querySelectorAll('div').forEach(function(el) {
         if (el.shadowRoot && el.style.position === 'fixed' && el.style.zIndex === '999999') host = el;
       });
       if (host && host.shadowRoot) {
         var s = document.createElement('style');
-        s.textContent = '.retell-chat-window { max-height: 350px !important; height: 350px !important; }';
+        s.textContent = '.retell-chat-window { max-height: 350px !important; height: 350px !important; } #retell-fab { display: none !important; } .retell-popup-container { bottom: 70px !important; right: 0 !important; }';
         host.shadowRoot.appendChild(s);
+        // Wire custom launcher to toggle Retell chat
+        var fab = host.shadowRoot.querySelector('#retell-fab');
+        document.getElementById('voqalChatLauncher').addEventListener('click', function() {
+          if (fab) fab.click();
+        });
+        // Hover effect
+        var btn = document.getElementById('voqalChatLauncher');
+        btn.addEventListener('mouseenter', function() { btn.style.transform = 'scale(1.1)'; btn.style.boxShadow = '0 6px 28px rgba(219,124,84,0.5)'; });
+        btn.addEventListener('mouseleave', function() { btn.style.transform = 'scale(1)'; btn.style.boxShadow = '0 4px 20px rgba(219,124,84,0.4)'; });
       } else {
-        setTimeout(retellResize, 500);
+        setTimeout(retellCustomize, 500);
       }
     })();
   </script>
