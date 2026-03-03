@@ -21,6 +21,23 @@
   <link rel="icon" href="favicon-32.png" type="image/png" sizes="32x32">
   <link rel="apple-touch-icon" href="favicon.png">
   <link rel="stylesheet" href="css/style.css">
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebPage",
+    "name": "Terms & Conditions",
+    "description": "Terms and Conditions for Voqal AI. Read our terms of service, payment terms, and service level agreements.",
+    "url": "https://voqalai.com/terms.html",
+    "breadcrumb": {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://voqalai.com/" },
+        { "@type": "ListItem", "position": 2, "name": "Terms & Conditions", "item": "https://voqalai.com/terms.html" }
+      ]
+    }
+  }
+  </script>
 </head>
 <body>
 
@@ -147,6 +164,7 @@
           <a href="index.html#services">Services</a>
           <a href="index.html#protocol">Protocol</a>
           <a href="pricing.html">Pricing</a>
+          <a href="lead-reactivation.html">Lead Reactivation</a>
           <a href="about.html">About</a>
           <a href="locations.html">Locations</a>
           <a href="index.html#demo">Free Demo</a>
@@ -187,12 +205,12 @@
     src="https://dashboard.retellai.com/retell-widget.js"
     type="module"
     data-public-key="public_key_692e22f82e27e1f57afe6"
-    data-agent-id="agent_98f2e297a8cf4ba0c5477ed2b4"
+    data-agent-id="agent_42e2f4ee39b0f6db2cbe9db919"
     data-title="Chat with Aria"
     data-color="#db7c54"
     data-logo-url="https://voqalai.com/favicon.png"
     data-bot-name="Aria"
-    data-popup-message="Hi! Want to see how AI handles your calls? Ask me anything."
+    data-popup-message="Hey! 👋 Got questions? Chat with us."
     data-show-ai-popup="true"
     data-show-ai-popup-time="15"
   ></script>
@@ -224,6 +242,9 @@
         var s = document.createElement('style');
         s.textContent = '.retell-chat-window { max-height: 350px !important; height: 350px !important; } #retell-fab { display: none !important; } .retell-popup-container { bottom: 70px !important; right: 0 !important; }';
         host.shadowRoot.appendChild(s);
+        // Change input placeholder
+        var inp = host.shadowRoot.querySelector('input[placeholder], textarea[placeholder]');
+        if (inp) inp.placeholder = 'Ask us anything...';
         // Wire custom launcher to toggle Retell chat
         var fab = host.shadowRoot.querySelector('#retell-fab');
         document.getElementById('voqalChatLauncher').addEventListener('click', function() {
