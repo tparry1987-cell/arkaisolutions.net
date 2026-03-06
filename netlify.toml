@@ -24,10 +24,8 @@
 [[headers]]
   for = "/demos/*"
   [headers.values]
-    X-Frame-Options = "SAMEORIGIN"
     X-Content-Type-Options = "nosniff"
     Permissions-Policy = "microphone=(self)"
-    Content-Security-Policy = "default-src 'self'; script-src 'self' 'unsafe-inline' https://cdn.jsdelivr.net; style-src 'self' 'unsafe-inline'; img-src 'self' data:; connect-src 'self' https://*.retellai.com wss://*.retellai.com; font-src 'self'; frame-src 'none';"
 
 [[headers]]
   for = "/fonts/*"
