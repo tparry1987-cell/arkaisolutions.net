@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curb Appeal Photography — AI Receptionist Demo</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            background: #0d0d0d;
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            overflow: hidden;
+        }
+
+        .bg-overlay {
+            position: fixed;
+            inset: 0;
+            background:
+                radial-gradient(ellipse at 20% 50%, rgba(180, 120, 60, 0.12) 0%, transparent 60%),
+                radial-gradient(ellipse at 80% 20%, rgba(120, 80, 40, 0.08) 0%, transparent 50%),
+                radial-gradient(ellipse at 60% 80%, rgba(200, 140, 60, 0.06) 0%, transparent 50%);
+            pointer-events: none;
+        }
+
+        .container {
+            position: relative;
+            text-align: center;
+            padding: 48px 32px;
+            max-width: 580px;
+            width: 100%;
+        }
+
+        .logo-area {
+            margin-bottom: 32px;
+        }
+
+        .logo-icon {
+            width: 72px;
+            height: 72px;
+            background: linear-gradient(135deg, #c8833a 0%, #8b5a2b 100%);
+            border-radius: 20px;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 32px;
+            margin-bottom: 20px;
+            box-shadow: 0 8px 32px rgba(200, 131, 58, 0.3);
+        }
+
+        h1 {
+            font-size: 2rem;
+            font-weight: 700;
+            color: #ffffff;
+            margin-bottom: 6px;
+            letter-spacing: -0.02em;
+        }
+
+        .tagline {
+            font-size: 0.95rem;
+            color: #c8833a;
+            font-weight: 500;
+            letter-spacing: 0.04em;
+            text-transform: uppercase;
+            margin-bottom: 24px;
+        }
+
+        p.description {
+            font-size: 1.05rem;
+            color: #888;
+            line-height: 1.7;
+            margin-bottom: 36px;
+        }
+
+        .services {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+            justify-content: center;
+            margin-bottom: 40px;
+        }
+
+        .service-tag {
+            background: rgba(255,255,255,0.05);
+            border: 1px solid rgba(255,255,255,0.1);
+            border-radius: 20px;
+            padding: 6px 14px;
+            font-size: 0.8rem;
+            color: #aaa;
+        }
+
+        .cta-area {
+            background: rgba(255,255,255,0.04);
+            border: 1px solid rgba(255,255,255,0.08);
+            border-radius: 16px;
+            padding: 28px 24px;
+        }
+
+        .cta-title {
+            font-size: 1.1rem;
+            font-weight: 600;
+            color: #fff;
+            margin-bottom: 8px;
+        }
+
+        .cta-sub {
+            font-size: 0.9rem;
+            color: #666;
+            margin-bottom: 20px;
+        }
+
+        .mic-hint {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 8px;
+            font-size: 0.82rem;
+            color: #555;
+            margin-top: 16px;
+        }
+
+        .powered-by {
+            margin-top: 40px;
+            font-size: 0.75rem;
+            color: #333;
+        }
+
+        .powered-by a {
+            color: #444;
+            text-decoration: none;
+        }
+
+        .powered-by a:hover {
+            color: #c8833a;
+        }
+    </style>
+</head>
+<body>
+    <div class="bg-overlay"></div>
+    <div class="container">
+        <div class="logo-area">
+            <div class="logo-icon">📸</div>
+            <h1>Curb Appeal Photography</h1>
+            <div class="tagline">Atlanta, GA — Real Estate Media</div>
+        </div>
+
+        <p class="description">
+            Talk to our AI receptionist and ask about booking a shoot, our services, coverage area, or turnaround times.
+        </p>
+
+        <div class="services">
+            <span class="service-tag">📸 Real Estate Photography</span>
+            <span class="service-tag">🚁 Drone Aerial</span>
+            <span class="service-tag">🏠 Matterport 3D Tours</span>
+            <span class="service-tag">🌅 Twilight Photography</span>
+            <span class="service-tag">🛋️ Virtual Staging</span>
+            <span class="service-tag">🎬 Realtor Headshots</span>
+        </div>
+
+        <div class="cta-area">
+            <div class="cta-title">Talk to Matt's AI Receptionist</div>
+            <div class="cta-sub">Click the button in the corner to start</div>
+            <div class="mic-hint">🎤 You'll be asked to allow microphone access</div>
+        </div>
+
+        <div class="powered-by">
+            Powered by <a href="https://voqalai.com" target="_blank">Voqal AI</a>
+        </div>
+    </div>
+
+    <script>
+        var vapiInstance = null;
+        const assistant = "5846933d-8a50-4a9c-ac5d-6cae0b9d540b";
+        const apiKey = "d3e66d66-40d7-4a6a-bf54-aa939173e7cc";
+        const buttonConfig = {
+            position: "bottom-right",
+            offset: "40px",
+            width: "56px",
+            height: "56px",
+            idle: {
+                color: "#c8833a",
+                type: "pill",
+                title: "Talk to Receptionist",
+                subtitle: "Curb Appeal Photography"
+            },
+            loading: {
+                color: "#c8833a",
+                type: "pill",
+                title: "Connecting...",
+                subtitle: "Please wait"
+            },
+            active: {
+                color: "#22c55e",
+                type: "pill",
+                title: "Call in progress",
+                subtitle: "Click to end"
+            }
+        };
+
+        (function (d, t) {
+            var g = document.createElement(t),
+                s = d.getElementsByTagName(t)[0];
+            g.src = "https://cdn.jsdelivr.net/gh/VapiAI/html-script-tag@latest/dist/assets/index.js";
+            g.defer = true;
+            g.async = true;
+            s.parentNode.insertBefore(g, s);
+            g.onload = function () {
+                vapiInstance = window.vapiSDK.run({
+                    apiKey: apiKey,
+                    assistant: assistant,
+                    config: buttonConfig,
+                });
+            };
+        })(document, "script");
+    </script>
+</body>
+</html>
