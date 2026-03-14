@@ -4,21 +4,9 @@ https://www.arkaisolutions.net/*  https://voqalai.com/:splat  301!
 
 # Old site redirects — map all removed pages to new structure
 
-# Industry pages (actual old filenames)
-/ai-receptionist-dental-practices        /about.html  301
-/ai-receptionist-dental-practices.html   /about.html  301
+# Industry pages — 6 now have real pages, remaining redirect to about.html
 /ai-receptionist-hair-salons             /about.html  301
 /ai-receptionist-hair-salons.html        /about.html  301
-/ai-receptionist-medical-practices       /about.html  301
-/ai-receptionist-medical-practices.html  /about.html  301
-/ai-receptionist-law-firms               /about.html  301
-/ai-receptionist-law-firms.html          /about.html  301
-/ai-receptionist-accountants             /about.html  301
-/ai-receptionist-accountants.html        /about.html  301
-/ai-receptionist-estate-agents           /about.html  301
-/ai-receptionist-estate-agents.html      /about.html  301
-/ai-receptionist-tradesmen               /about.html  301
-/ai-receptionist-tradesmen.html          /about.html  301
 /ai-receptionist-gyms-fitness            /about.html  301
 /ai-receptionist-gyms-fitness.html       /about.html  301
 /ai-receptionist-veterinary              /about.html  301
@@ -28,21 +16,21 @@ https://www.arkaisolutions.net/*  https://voqalai.com/:splat  301!
 /ai-receptionist-restaurants             /about.html  301
 /ai-receptionist-restaurants.html        /about.html  301
 
-# Old format industry pages (just in case)
-/dental-ai-receptionist          /about.html  301
-/dental-ai-receptionist.html     /about.html  301
+# Old format industry pages — redirect to new real pages
+/dental-ai-receptionist          /ai-receptionist-dental-practices.html  301
+/dental-ai-receptionist.html     /ai-receptionist-dental-practices.html  301
 /hair-beauty-ai-receptionist     /about.html  301
 /hair-beauty-ai-receptionist.html /about.html 301
-/medical-ai-receptionist         /about.html  301
-/medical-ai-receptionist.html    /about.html  301
-/law-firm-ai-receptionist        /about.html  301
-/law-firm-ai-receptionist.html   /about.html  301
-/accountant-ai-receptionist      /about.html  301
-/accountant-ai-receptionist.html /about.html  301
-/estate-agent-ai-receptionist    /about.html  301
-/estate-agent-ai-receptionist.html /about.html 301
-/tradesman-ai-receptionist       /about.html  301
-/tradesman-ai-receptionist.html  /about.html  301
+/medical-ai-receptionist         /ai-receptionist-medical-practices.html  301
+/medical-ai-receptionist.html    /ai-receptionist-medical-practices.html  301
+/law-firm-ai-receptionist        /ai-receptionist-law-firms.html  301
+/law-firm-ai-receptionist.html   /ai-receptionist-law-firms.html  301
+/accountant-ai-receptionist      /ai-receptionist-accountants.html  301
+/accountant-ai-receptionist.html /ai-receptionist-accountants.html  301
+/estate-agent-ai-receptionist    /ai-receptionist-estate-agents.html  301
+/estate-agent-ai-receptionist.html /ai-receptionist-estate-agents.html 301
+/tradesman-ai-receptionist       /ai-receptionist-tradesmen.html  301
+/tradesman-ai-receptionist.html  /ai-receptionist-tradesmen.html  301
 /gym-ai-receptionist             /about.html  301
 /gym-ai-receptionist.html        /about.html  301
 /vet-ai-receptionist             /about.html  301
@@ -97,10 +85,8 @@ https://www.arkaisolutions.net/*  https://voqalai.com/:splat  301!
 /case-studies                    /about.html              301
 /case-studies.html               /about.html              301
 
-# Blog pages → homepage
-/blog                            /index.html             301
-/blog.html                       /index.html             301
-/blog/*                          /index.html             301
+# Blog pages — specific old URLs only (blog/index.html now serves real content)
+/blog.html                       /blog/                  301
 
 # Nura demo variants
 /nura_demo                       /index.html#demo        301

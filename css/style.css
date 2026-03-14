@@ -752,6 +752,31 @@ nav.scrolled {
   color: var(--text-faint);
 }
 
+.input-group select {
+  background: transparent;
+  border: none;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  padding: 0.8rem 0;
+  color: var(--text-primary);
+  font-family: var(--font-sans);
+  font-size: 1rem;
+  transition: var(--ease);
+  width: 100%;
+  cursor: pointer;
+  -webkit-appearance: none;
+  appearance: none;
+}
+
+.input-group select:focus {
+  outline: none;
+  border-bottom-color: var(--accent);
+}
+
+.input-group select option {
+  background: var(--bg-dark);
+  color: var(--text-primary);
+}
+
 .btn-submit {
   background: var(--text-primary);
   color: var(--bg-dark);
@@ -907,6 +932,12 @@ footer {
   text-decoration: underline;
 }
 
+.cookie-buttons {
+  display: flex;
+  gap: 0.75rem;
+  flex-shrink: 0;
+}
+
 .btn-cookie {
   background: var(--text-primary);
   color: var(--bg-dark);
@@ -919,12 +950,24 @@ footer {
   letter-spacing: 0.1em;
   cursor: pointer;
   white-space: nowrap;
-  transition: background 0.3s ease;
+  transition: background 0.3s ease, color 0.3s ease;
 }
 
 .btn-cookie:hover {
   background: var(--accent);
   color: white;
+}
+
+.btn-cookie-reject {
+  background: transparent;
+  color: var(--text-secondary);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+.btn-cookie-reject:hover {
+  background: rgba(255, 255, 255, 0.05);
+  color: var(--text-primary);
+  border-color: rgba(255, 255, 255, 0.3);
 }
 
 /* --- ANIMATIONS --- */
@@ -1338,9 +1381,11 @@ footer {
 .pricing-card.featured {
   border-color: rgba(219,124,84,0.35);
   background: rgba(7,9,8,0.7);
+  box-shadow: 0 0 40px rgba(219,124,84,0.08);
 }
 .pricing-card.featured:hover {
   border-color: rgba(219,124,84,0.5);
+  box-shadow: 0 0 60px rgba(219,124,84,0.12);
 }
 .pricing-badge {
   position: absolute;
@@ -1440,10 +1485,13 @@ footer {
 }
 .pricing-card.featured .pricing-cta {
   border-color: #db7c54;
-  color: #db7c54;
+  background: #db7c54;
+  color: #070908;
+  font-weight: 600;
 }
 .pricing-card.featured .pricing-cta:hover {
-  background: rgba(219,124,84,0.1);
+  background: #e8955e;
+  border-color: #e8955e;
 }
 
 .maintenance-note {
@@ -1759,6 +1807,7 @@ footer {
 
 /* --- RESPONSIVE: PRICING & LEAD-REACTIVATION --- */
 @media (max-width: 768px) {
+  .pricing-includes-grid { grid-template-columns: 1fr 1fr !important; }
   .pricing-grid { grid-template-columns: 1fr; max-width: 420px; margin: 0 auto 40px; }
   .vs-grid { grid-template-columns: 1fr; }
   .vs-divider { padding: 0; font-size: 18px; }
